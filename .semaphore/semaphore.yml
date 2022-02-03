@@ -37,7 +37,3 @@ blocks:
           commands:
             - cd DaniMundo
             - python manage.py check --deploy
-        - name: Style check
-          commands:
-            - pip install flake8
-            - flake8 DaniMundo/ --max-line-length=127
