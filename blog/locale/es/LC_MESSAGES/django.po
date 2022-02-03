@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DaniMundo v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-02 09:51+0100\n"
-"PO-Revision-Date: 2022-02-02 09:53+0100\n"
+"POT-Creation-Date: 2022-02-03 11:34+0100\n"
+"PO-Revision-Date: 2022-02-03 11:42+0100\n"
 "Last-Translator: Danijela Popović <dani@danimundo.com>\n"
 "Language-Team: es <LL@li.org>\n"
 "Language: es\n"
@@ -16,131 +16,136 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.0\n"
 
-#: .\apps.py .\templates\blog\article_list.html
+#: .\blog\apps.py .\blog\templates\base.html
+#: .\blog\templates\blog\article_list.html
 msgid "Blog"
 msgstr "Blog"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "first name"
 msgstr "nombre"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "last name"
 msgstr "apellido(s)"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "username"
 msgstr "nombre de usuario"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "email"
 msgstr "correo electrónico"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "slug"
 msgstr "ruta"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "user"
 msgstr "usuario"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "users"
 msgstr "usuarios"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "public"
 msgstr "publicado"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "private"
 msgstr "privado"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "draft"
 msgstr "borrador"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "title"
 msgstr "título"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "summary"
 msgstr "resumen"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "The summary of the article (max. 500 characters)"
 msgstr "Resumen del artículo (máx. 500 carácteres)"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "body"
 msgstr "cuerpo del artículo"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "The body/contents of the article"
 msgstr "El cuerpo/contenido/texto del artículo"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "author(s)"
 msgstr "autor(es)"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "article publication status"
 msgstr "estado de publicación del artículo"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "date created"
 msgstr "fecha de creación"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "date updated"
 msgstr "fecha de última modificación"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "article"
 msgstr "artículo"
 
-#: .\models.py
+#: .\blog\models.py
 msgid "articles"
 msgstr "artículos"
 
-#: .\templates\blog\article_details.html .\templates\blog\article_list.html
-msgid "Date of publication:"
-msgstr "Fecha de publicación:"
+#: .\blog\templates\base.html
+msgid "DaniMundo"
+msgstr "DaniMundo"
 
-#: .\templates\blog\article_details.html .\templates\blog\article_list.html
-#: .\templates\blog\user_details.html
+#: .\blog\templates\base.html .\blog\templates\home.html
+msgid "Home"
+msgstr "Inicio"
+
+#: .\blog\templates\blog\article_authors.html
 msgid "Author:"
 msgid_plural "Authors:"
 msgstr[0] "Autor:"
 msgstr[1] "Autores:"
 
-#: .\templates\blog\article_details.html
+#: .\blog\templates\blog\article_details.html
+#: .\blog\templates\blog\article_list.html
+msgid "Date of publication:"
+msgstr "Fecha de publicación:"
+
+#: .\blog\templates\blog\article_details.html
 msgid "Last update:"
 msgstr "Última modificación:"
 
-#: .\templates\blog\user_details.html
+#: .\blog\templates\blog\user_details.html
 #, python-format
 msgid "Articles written by %(user)s"
 msgstr "Artículos escritos por %(user)s"
 
+#: .\blog\templates\home.html
+msgid "Welcome!"
+msgstr "¡Bienvenid@s!"
+
+#: .\blog\templates\home.html
+msgid ""
+"\n"
+"Hey, nice to see you! :grinning:\n"
+msgstr ""
+"\n"
+"¡Hola! ¡Qué gusto verte! :grinning:\n"
+
 #~ msgid "Created on"
 #~ msgstr "Fecha de publicación:"
-
-#~ msgid "DaniMundo"
-#~ msgstr "DaniMundo"
-
-#~ msgid "Home"
-#~ msgstr "Inicio"
-
-#~ msgid "Welcome!"
-#~ msgstr "¡Bienvenid@s!"
-
-#~ msgid ""
-#~ "\n"
-#~ "Hey, nice to see you! :grinning:\n"
-#~ msgstr ""
-#~ "\n"
-#~ "¡Hola! ¡Qué gusto verte! :grinning:\n"
