@@ -16,6 +16,8 @@ blocks:
             - cache restore
             - pip install --cache-dir .pip_cache -r requirements.txt
             - cache store
+      secrets:
+        - name: DaniMundo_SECRETS
   - name: Test
     task:
       prologue:
@@ -35,3 +37,5 @@ blocks:
         - name: Checklist
           commands:
             - python manage.py check --deploy
+      secrets:
+        - name: DaniMundo_SECRETS
