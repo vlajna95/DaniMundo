@@ -29,7 +29,9 @@ blocks:
       jobs:
         - name: Unit tests
           commands:
+            - ls
             - cd DaniMundo
+            - ls
             - python manage.py makemigrations
             - python manage.py migrate
             - python manage.py test
