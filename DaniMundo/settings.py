@@ -1,5 +1,6 @@
 from pathlib import Path
 import environ
+from django.utils.translation import gettext_lazy as _
 
 env = environ.Env()
 environ.Env.read_env()
@@ -27,6 +28,7 @@ INSTALLED_APPS = [
 	"django_extensions",
 	# "django_lifecycle",
 	"modeltranslation",
+	"grappelli",
 	# default Django apps
 	"django.contrib.admin",
 	"django.contrib.auth",
@@ -41,7 +43,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
 	"django.middleware.security.SecurityMiddleware",
 	"django.contrib.sessions.middleware.SessionMiddleware",
-	#"django.contrib.middleware.i18n_middleware",
+	"django.middleware.locale.LocaleMiddleware",
 	"django.middleware.common.CommonMiddleware",
 	"django.middleware.csrf.CsrfViewMiddleware",
 	"django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -110,6 +112,7 @@ LANGUAGES = [
 	("sr", "Српски (ћирилица)"),
 ]
 LANGUAGE_CODE = "sr"
+LANGUAGE_COOKIE_NAME = "DaniMundo_language"
 TIME_ZONE = "Europe/Belgrade"
 USE_I18N = True
 USE_L10N = True
@@ -133,6 +136,8 @@ AUTH_USER_MODEL = "blog.CustomUser"
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
+GRAPPELLI_ADMIN_TITLE = _("DaniMundo")
+
 # Configure Django App for Heroku.
-import django_on_heroku
-django_on_heroku.settings(locals())
+#import django_on_heroku
+#django_on_heroku.settings(locals())

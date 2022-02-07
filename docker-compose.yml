@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    restart: always
+    privileged: true
+    build: .
+    container_name: danimundo
+    command: "cd DaniMundo && python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic && gunicorn DaniMundo.wsgi --user www-data --bind 0.0.0.0:80 --workers 3 --reload && nginx -g \"daemon off.\""
+  ports:
+    - "80:80"

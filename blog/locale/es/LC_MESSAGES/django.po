@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DaniMundo v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 15:41+0100\n"
-"PO-Revision-Date: 2022-02-03 11:42+0100\n"
+"POT-Creation-Date: 2022-02-06 21:54+0100\n"
+"PO-Revision-Date: 2022-02-06 22:05+0100\n"
 "Last-Translator: Danijela Popović <dani@danimundo.com>\n"
 "Language-Team: es <LL@li.org>\n"
 "Language: es\n"
@@ -17,6 +17,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0\n"
+
+#: .\blog\admin.py
+#, python-format
+msgid "%(count)d article"
+msgid_plural "%(count)d articles"
+msgstr[0] "%(count)d artículo"
+msgstr[1] "%(count)d artículos"
+
+#: .\blog\admin.py
+msgid "Articles"
+msgstr "Artículos"
+
+#: .\blog\admin.py
+#, python-format
+msgid "%(count)d author"
+msgid_plural "%(count)d authors"
+msgstr[0] "%(count)d autor"
+msgstr[1] "%(count)d autores"
+
+#: .\blog\admin.py
+msgid "Authors"
+msgstr "Autores"
 
 #: .\blog\apps.py .\blog\templates\base.html
 #: .\blog\templates\blog\article_list.html

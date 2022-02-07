@@ -2,6 +2,7 @@ django
 django-extensions
 django-lifecycle
 django-modeltranslation
+grappelli
 markdown
 pymdown-extensions
 pygments

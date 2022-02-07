@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load markdown_extras %}
 
 <!DOCTYPE html>
 <html>
@@ -19,12 +20,29 @@
 </ul>
 </nav>
 </aside>
+
 <main>
 {% block content %}
 
 {% endblock content %}
 </main>
-
+<!--
+<footer>
+<form action="{% url 'set_language' %}" method="post">
+{% csrf_token %}
+<input type="hidden" name="next" value="{% if article %}/blog/{{ article|full_slug }}{% else %}/{% endif %}" />
+<select name="language">
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+{% for language in languages %}
+<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>{{ language.name_local }} ({{ language.name_translated }})</option>
+{% endfor %}
+</select>
+<input type="submit" value="OK" />
+</form>
+</footer>
+-->
 <script src="{% static 'js/clipboard.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
 </body>
